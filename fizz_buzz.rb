@@ -11,4 +11,5 @@ def fizz_buzz(n)
   end
 end
 
-puts "Hello world"
+words = "Hello, Ryota"
+puts words
