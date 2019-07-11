@@ -12,8 +12,10 @@ def fizz_buzz(n)
 end
 
 sum = 0
-(1..10).each do |num|
-  puts sum
-  sum += num
+num = gets.to_i <= 0 ? 0
+(1..num).each do |nu|
+  if nu % 2 == 0
+    sum += nu
+  end
 end
 puts sum
