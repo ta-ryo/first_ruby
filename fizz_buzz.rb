@@ -2,8 +2,7 @@ def fizz_buzz(num)
   (1..num).each do |n|
     if n % 15 == 0
       puts 'FizzBuzz'
-    end
-    if n % 3 == 0
+    elsif n % 3 == 0
       puts 'Fizz'
     elsif n % 5 == 0
       puts 'Buzz'
@@ -13,10 +12,10 @@ def fizz_buzz(num)
   end
 end
 
+print "数値を入力してください：" 
 n = gets.to_i
 fizz_buzz(n)
 
-input = gets.to_i
 
 def sum_up_to(last_number)
   sum = 0
@@ -27,5 +26,3 @@ def sum_up_to(last_number)
   end
   return sum
 end
-
-puts sum_up_to(input)
